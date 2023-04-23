@@ -1,3 +1,7 @@
+import polygon
+import circle
+
+
 def main():
     print("""
     xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -22,7 +26,7 @@ def main():
         Please, choose the type of figure you'd like
         
         1. Regular Polygon
-        3. Circle
+        2. Circle
 
         """)
         if (option2 == '1'):
@@ -44,9 +48,12 @@ def main():
                 xxxx
                 AREA
                 xxxx
-
+                
                 """)
-                #Area formula
+                polygon.calculate_regular_polygon_area(
+                    input(
+                        "Please, enter the number of sides, and the length of them in order, separated by a space: "
+                    ))
             elif (option3 == '2'):
                 print("""
                 xxxxxxxxx
@@ -54,7 +61,10 @@ def main():
                 xxxxxxxxx
                 
                 """)
-                #Perimeter formula
+                polygon.calculate_regular_polygon_perimeter(
+                    input(
+                        "Please, enter the number of sides, and the length of them in order, separated by a space: "
+                    ))
             elif (option3 == '3'):
                 print("""
                 xxxxxx
@@ -62,7 +72,10 @@ def main():
                 xxxxxx
                 
                 """)
-                #Volume Formula
+                polygon.calculate_regular_polygon_volume(
+                    input(
+                        "Please, enter the number of sides, the length of them, and it's height in order, separated by a space: "
+                    ))
             else:
                 print("""
                 Option not valid
@@ -89,7 +102,8 @@ def main():
                 xxxx
 
                 """)
-                #Area formula
+                circle.calculate_circle_area(
+                    input("Please, enter the radius of the circle"))
             elif (option3 == '2'):
                 print("""
                 xxxxxxxxx
@@ -97,7 +111,8 @@ def main():
                 xxxxxxxxx
                 
                 """)
-                #Perimeter formula
+                circle.calculate_circle_perimeter(
+                    input("Please, enter the radius of the circle"))
             elif (option3 == '3'):
                 print("""
                 xxxxxx
@@ -105,7 +120,8 @@ def main():
                 xxxxxx
                 
                 """)
-                #Volume Formula
+                circle.calculate_circle_volume(
+                    input("Please, enter the radius of the sphere"))
             else:
                 print("""
                 Option not valid
@@ -155,11 +171,6 @@ def main():
             xxxxxxxxxxx
 
             """)
-            numbers = []
-            numbers = input(
-                """Please enter the numbers you'd like to Subtract separated by a ',' 
-                
-                """)
             #Subtraction Operation
         elif (option2 == '3'):
             print("""
@@ -168,11 +179,6 @@ def main():
             xxxxxxxx
 
             """)
-            numbers = []
-            numbers = input(
-                """Please enter the numbers you'd like to Divide separated by a ',' 
-                
-                """)
             #Division Operation
         elif (option2 == '4'):
             print("""
@@ -181,11 +187,6 @@ def main():
             xxxxxxxxxxxxxx
 
             """)
-            numbers = []
-            numbers = input(
-                """Please enter the numbers you'd like to Multiply separated by a ',' 
-                
-                """)
             #Multiplication Operation
         elif (option2 == '5'):
             print("""
@@ -194,10 +195,6 @@ def main():
             xxxxxxxxxxx
 
             """)
-            number = input(
-                """Please enter the number you'd like to get the square root from
-                
-                """)
             #SquareRoot Operation
         elif (option2 == '6'):
             print("""
@@ -206,10 +203,6 @@ def main():
             xxxxx
 
             """)
-            number = input(
-                """Please enter the numbers you want to get the power from (order = base, power)
-                
-                """)
             #SquareRoot Operation
         elif (option2 == '7'):
             print("""
@@ -218,10 +211,6 @@ def main():
             xxxxxxxxx
 
             """)
-            number = input(
-                """Please enter the base and argument you want to use (order = base, argument)
-                
-                """)
             #SquareRoot Operation
         else:
             print("""
