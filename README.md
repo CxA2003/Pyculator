@@ -1,6 +1,6 @@
 
 # Pyculator
-A small python functional calculator with the following functions:
+A python calculator with the following functions:
 =============
 
 Geometrical:
@@ -33,4 +33,12 @@ Modules Used:
   1. Math
   2. Numpy
   3. Custom Modules for the logic of each operation
+```
+
+- - - -
+To use
+```
+  1. Download repository (or use a fork)
+  2. Open your python interpeter
+  3. Execute the main.py file
 ```
