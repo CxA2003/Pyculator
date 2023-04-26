@@ -23,4 +23,13 @@ Arithmetical
   7. Calculate logarithm
           
 
-Used the math and numpy modules
+
+
+
+
+
+Modules Used
+=============
+  1. Math
+  2. Numpy
+  3. Custom Modules for the logic of each operation
