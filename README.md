@@ -3,10 +3,12 @@
 A small python functional calculator with the following functions:
 =============
 
- Markup : 1. Geometrical
+Geometrical
+=============
               1. Find any regular polygon's perimeter, area and volume
               2. Find any circle's perimeter, area and (in case of a sphere), it's volume
-          2. Arithmetical
+Arithmetical
+=============
               1. Calculate sum
               2. Calculate substraction
               3. Calculate division
