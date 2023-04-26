@@ -1,6 +1,6 @@
 
 # Pyculator
-A small python functional calculator with the following functions:
+A python calculator with the following functions:
 =============
 
 Geometrical:
